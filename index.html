@@ -14,7 +14,13 @@
               verify: { projectID: '6a157bdcb25dea24735da982' },
               url: 'https://general-runtime.voiceflow.com',
               voice: {
-                url: "https://runtime-api.voiceflow.com"
+                url: 'https://runtime-api.voiceflow.com'
+              },
+              assistant: {
+                persistence: 'localStorage',
+                title: 'Motonet AI Agent',
+                description: 'Built by Upseller',
+                stylesheet: window.location.origin + '/Motonet-agent-styles.css'
               }
             });
           }
