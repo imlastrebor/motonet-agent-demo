@@ -6,12 +6,20 @@
     <title>Motonet AI Agent Demo</title>
   </head>
   <body>
-    <!-- Upseller Embed Script -->
-    <script src="https://embed.upseller.cloud/plugin-v5/embed.js" async></script>
-    <script>
-      window['_Up'] = window['_Up'] || {};
-      window['_Up']._UpCId = 'Motonet-agent';
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '6a157bdcb25dea24735da982' },
+              url: 'https://general-runtime.voiceflow.com',
+              voice: {
+                url: "https://runtime-api.voiceflow.com"
+              }
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
     </script>
-    <!-- End Upseller Embed Script -->
   </body>
 </html>
