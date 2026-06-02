@@ -8,14 +8,17 @@
 
 .vfrc-message{
   border-radius: 4px;
+  background-color: #f0f0f0;
 }
 
 .vfrc-message > *{
   border-radius: 4px;
+  background-color: #DADADA;
 }
 
 .vfrc-user-response > * {
   border-radius: 4px;
+  
 }
 
 .vfrc-card{
