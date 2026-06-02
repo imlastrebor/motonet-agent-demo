@@ -4,6 +4,10 @@
   --fonts-default: 'Barlow', sans-serif;
 }
 
+.vfrc-widget {
+  font-family: var(--fonts-default, 'Barlow', sans-serif);
+}
+
 .vfrc-chat{
   border-radius: 0px;
 }
