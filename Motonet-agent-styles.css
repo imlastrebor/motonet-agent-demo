@@ -31,7 +31,7 @@
 .vfrc-card > div:last-child .vfrc-button {
   flex: 1;
   padding: 8px 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -57,4 +57,63 @@
 .vfrc-card > div:last-child .vfrc-button:last-of-type:hover {
   background-color: rgba(29, 129, 72, 0.8) !important;
   border-color: rgba(29, 129, 72, 0.8) !important;
+}
+
+/* chat input */
+.vfrc-input-container {
+  border: 2px solid rgba(29, 129, 72, 1) !important;
+  background-color: #fff !important;
+}
+
+.vfrc-input-container:focus-within {
+  box-shadow: 0 0 0 3px rgba(29, 129, 72, 0.2) !important;
+}
+
+.vfrc-chat-focus-ring {
+  box-shadow: rgba(29, 129, 72, 1) 0 0 0 2px inset !important;
+}
+
+.vfrc-chat-input {
+  outline: none !important;
+  background-color: transparent !important;
+}
+
+.vfrc-chat-input:focus {
+  outline: none !important;
+}
+
+.vfrc-chat-input__audio-input {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: rgba(50, 50, 54, 1) !important;
+}
+
+.vfrc-chat-input__audio-input:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.vfrc-chat-input__audio-input:focus-visible {
+  outline: 2px solid rgba(29, 129, 72, 0.5) !important;
+  outline-offset: 2px;
+}
+
+.vfrc-chat-input__send:not(:disabled) {
+  background-color: rgba(29, 129, 72, 1) !important;
+  color: #fff !important;
+}
+
+.vfrc-chat-input__send:not(:disabled) .vfrc-chat-input__send-icon {
+  color: #fff !important;
+}
+
+.vfrc-chat-input__send:not(:disabled):hover {
+  background-color: rgba(29, 129, 72, 0.85) !important;
+}
+
+.vfrc-chat-input__send:not(:disabled):active {
+  background-color: rgba(24, 108, 60, 1) !important;
+}
+
+.vfrc-chat-input__send:focus-visible {
+  outline: 2px solid rgba(29, 129, 72, 0.5) !important;
+  outline-offset: 2px;
 }
