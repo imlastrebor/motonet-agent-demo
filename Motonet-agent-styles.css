@@ -1,12 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');
-
-/* Voiceflow injects this stylesheet into the widget shadow root — :host targets that root */
-:host {
-  --fonts-default: 'Barlow', sans-serif;
+/*
+ * Separate family name — Voiceflow UI loads "Barlow" with only weight 400,
+ * which blocks real 600/700 when both share the same font-family name.
+ */
+@font-face {
+  font-family: 'Barlow Custom';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3p-ks51ostz0rdg.woff2) format('woff2');
 }
 
-.vfrc-widget {
-  font-family: var(--fonts-default, 'Barlow', sans-serif);
+@font-face {
+  font-family: 'Barlow Custom';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow Custom';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow Custom';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51ostz0rdg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Barlow Custom';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51ostz0rdg.woff2) format('woff2');
+}
+
+/* Voiceflow injects this stylesheet into the widget shadow root */
+:host {
+  --fonts-default: 'Barlow Custom', sans-serif;
+  font-synthesis: none;
+}
+
+.vfrc-widget,
+.vfrc-widget * {
+  font-family: var(--fonts-default, 'Barlow Custom', sans-serif) !important;
+  font-synthesis: none;
 }
 
 .vfrc-chat{
