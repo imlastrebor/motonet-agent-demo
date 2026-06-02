@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap');
-
-:host {
-  --fonts-default: 'Barlow', sans-serif;
-}
-
 .vfrc-widget {
-  font-family: var(--fonts-default, 'Barlow', sans-serif);
+  font-family: inherit;
 }
 
 .vfrc-chat{
@@ -126,4 +120,8 @@
 .vfrc-chat-input__send:focus-visible {
   outline: 2px solid rgba(29, 129, 72, 0.5) !important;
   outline-offset: 2px;
+}
+
+.vfrc-system-response .markdown-link {
+  color: rgba(29, 129, 72, 1);
 }
