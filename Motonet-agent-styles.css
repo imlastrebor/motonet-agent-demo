@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');
 
+/* Voiceflow injects this stylesheet into the widget shadow root — :host targets that root */
+:host {
+  --fonts-default: 'Barlow', sans-serif;
+}
+
 .vfrc-widget {
-  font-family: 'Barlow', sans-serif;
+  font-family: var(--fonts-default, 'Barlow', sans-serif);
 }
 
 .vfrc-chat{
