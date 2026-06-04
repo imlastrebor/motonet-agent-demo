@@ -22,11 +22,11 @@
 
 .vfrc-message .markdown-link:hover {
   color: rgba(24, 108, 60, 1) !important;
+  text-decoration-color: rgba(24, 108, 60, 1) !important;
 }
 
 .vfrc-user-response > * {
   border-radius: 4px;
-
 }
 
 .vfrc-card{
@@ -84,6 +84,7 @@
 .vfrc-prompt {
   display: flex;
   gap: 8px;
+  border-radius: 6px;
 }
 
 .vfrc-prompt .vfrc-button {
