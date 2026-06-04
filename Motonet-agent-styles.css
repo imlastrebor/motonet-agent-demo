@@ -16,6 +16,14 @@
   border-radius: 4px;
 }
 
+.vfrc-message .markdown-link {
+  color: rgba(29, 129, 72, 1) !important;
+}
+
+.vfrc-message .markdown-link:hover {
+  color: rgba(24, 108, 60, 1) !important;
+}
+
 .vfrc-user-response > * {
   border-radius: 4px;
 
