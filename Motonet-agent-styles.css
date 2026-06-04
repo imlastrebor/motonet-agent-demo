@@ -80,6 +80,43 @@
   border-color: rgba(29, 129, 72, 0.9) !important;
 }
 
+/* prompt actions (e.g. Start new chat / Cancel) */
+.vfrc-prompt {
+  display: flex;
+  gap: 8px;
+}
+
+.vfrc-prompt .vfrc-button {
+  flex: 1;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Start new chat — primary green */
+.vfrc-prompt .vfrc-button:first-of-type {
+  background-color: rgba(29, 129, 72, 1) !important;
+  color: #fff !important;
+  border: 1px solid rgba(29, 129, 72, 1) !important;
+}
+
+.vfrc-prompt .vfrc-button:first-of-type:hover {
+  background-color: rgba(29, 129, 72, 0.9) !important;
+  border-color: rgba(29, 129, 72, 0.9) !important;
+}
+
+/* Cancel — outline */
+.vfrc-prompt .vfrc-button:last-of-type {
+  background-color: transparent !important;
+  color: #323236 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+
+.vfrc-prompt .vfrc-button:last-of-type:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
 /* chat input */
 .vfrc-input-container {
   border: 1px solid #DADADA !important;
