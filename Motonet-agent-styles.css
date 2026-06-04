@@ -82,13 +82,13 @@
 
 /* chat input */
 .vfrc-input-container {
-  border: 2px solid rgba(29, 129, 72, 1) !important;
+  border: 1px solid #DADADA !important;
   background-color: #fff !important;
 }
 
-.vfrc-input-container:focus-within {
+/* .vfrc-input-container:focus-within {
   box-shadow: 0 0 0 3px rgba(29, 129, 72, 0.2) !important;
-}
+} */
 
 .vfrc-chat-focus-ring {
   box-shadow: rgba(29, 129, 72, 1) 0 0 0 2px inset !important;
